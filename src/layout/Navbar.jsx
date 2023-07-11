@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand text-warning" href="##">
+        <Link to="/" className="navbar-brand text-warning">
           🚀리액트 & 스프링부트
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,7 +22,9 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <button className="btn btn-outline-light">유저 추가</button>
+              <Link to="adduser" className="btn btn-outline-light">
+                유저 추가
+              </Link>
             </li>
           </ul>
         </div>
